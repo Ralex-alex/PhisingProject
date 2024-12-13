@@ -2,6 +2,8 @@ Project : github : https://github.com/Ralex-alex/PhisingProject.git
 
 Welcome to PhishSentinel !
 
+to run the code please read the requirements.txt file !
+
 This is just a Base model of the overall project with a lite version of bert 
 there are 3 python scrips here: 
 
