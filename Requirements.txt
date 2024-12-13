@@ -1,0 +1,23 @@
+you will need these libraries to run my code :
+
+pandas
+scikit-learn
+transformers
+torch
+
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+Instructions:
+
+Create and activate a virtual environment (optional, but recommended):
+bash
+
+Copy code
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+Install dependencies:
+
+Copy code
+pip install -r requirements.txt
