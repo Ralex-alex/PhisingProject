@@ -1,15 +1,27 @@
-# Advanced Phishing Detection System
+# PhishSentinel: Advanced Phishing Detection System
 
 This project implements a state-of-the-art phishing detection pipeline that leverages large language models (LLMs) to complement and enhance traditional spam filtering techniques.
 
 ## Features
 
+### Core Detection Capabilities
 - **Two-Stage Detection Pipeline**: Combines traditional ML with advanced LLM-based analysis
 - **Multiple Feature Extraction**: Utilizes text-based features, URLs, custom indicators, and semantic embeddings
 - **Enhanced Accuracy**: Improved detection rates over traditional spam filters
 - **REST API**: Simple deployment as a service
 - **Expandable Dataset**: Scripts to download and integrate additional public datasets
 - **Privacy-Focused**: Can be run on-premises with no external dependencies
+
+### Advanced Analysis Components
+- **Sender Analysis**: Email authentication (SPF, DKIM, DMARC), domain age checking, reputation analysis, typosquatting detection
+- **URL Analysis**: Domain reputation, redirect chain analysis, URL shortener detection, visual vs. actual URL comparison
+- **Image Analysis**: Brand logo detection, OCR on images, URL manipulation detection, visual phishing indicators
+- **Behavioral Analysis**: Sending time analysis, geographic origin analysis, communication pattern analysis
+
+### Browser Extension
+- **Real-time Email Analysis**: Check emails directly in Gmail and Outlook
+- **Visual Risk Indicators**: Clear visual feedback on phishing risk
+- **User Feedback Collection**: Report false positives/negatives to improve the system
 
 ## Getting Started
 
@@ -19,13 +31,14 @@ This project implements a state-of-the-art phishing detection pipeline that leve
 - Pip package manager
 - At least 4GB RAM (8GB+ recommended for training with larger datasets)
 - GPU optional but recommended for faster training and inference
+- Tesseract OCR (for image text extraction)
 
 ### Installation
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd phishing-detection
+   git clone https://github.com/Ralex-alex/PhisingProject.git
+   cd PhisingProject
    ```
 
 2. Create and activate a virtual environment:
@@ -43,6 +56,11 @@ This project implements a state-of-the-art phishing detection pipeline that leve
    ```
    pip install -r Requirements.txt
    ```
+
+4. Install Tesseract OCR:
+   - On Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+   - On macOS: `brew install tesseract`
+   - On Linux: `sudo apt install tesseract-ocr`
 
 ### Dataset Preparation
 
@@ -62,7 +80,16 @@ All datasets will be saved in the `expanded_data` directory.
 
 ## Usage
 
-### Training the Model
+### Running the System with Batch Files
+
+The project includes several batch files for easy execution:
+
+- **start_phishing_detector.bat**: Launches the basic phishing detection system
+- **start_enhanced_detector.bat**: Launches the advanced phishing detection system with all components
+- **start_api_server.bat**: Starts the REST API server for integrating with other applications
+- **test_all_emails.bat**: Runs the detector against all test emails in the test folder
+
+### Training the Models
 
 ```
 python combined_pipeline.py
@@ -75,6 +102,26 @@ This will:
 4. Evaluate the performance
 5. Save the model to the `models` directory
 
+### Enhanced Phishing Detector
+
+The enhanced detector provides a more comprehensive analysis:
+
+```
+python enhanced_phishing_detector.py --file path/to/email.eml
+```
+
+Or use the GUI version:
+
+```
+python enhanced_phishing_detector_gui.py
+```
+
+The enhanced detector includes:
+- Multi-factor analysis (sender, URL, content, images)
+- Vector database for similarity matching
+- Explainable results with highlighted indicators
+- Integrated feedback loop
+
 ### Running the API Server
 
 ```
@@ -85,63 +132,46 @@ This will start a FastAPI server on http://localhost:8000 with the following end
 
 - `/predict` - Analyze a single email for phishing indicators
 - `/batch-predict` - Analyze multiple emails in a single request
+- `/analyze-sender` - Analyze just the sender information
+- `/analyze-url` - Analyze URLs in isolation
+- `/analyze-image` - Analyze images for phishing indicators  
 - `/feedback` - Submit feedback to improve the model
 - `/health` - Check if the API is healthy
 - `/docs` - Swagger UI for API documentation
 
-### API Examples
+### Browser Extension
 
-#### Single Email Analysis
+The project includes a browser extension for Chrome and Firefox that integrates with webmail services:
 
-```python
-import requests
-import json
-
-url = "http://localhost:8000/predict"
-payload = {
-    "subject": "Urgent: Account Verification Required",
-    "body": "Dear User, Your account has been suspended. Click here to verify: http://suspicious-link.com",
-    "sender": "security@bank-verify.com"
-}
-
-response = requests.post(url, json=payload)
-print(json.dumps(response.json(), indent=2))
+1. Navigate to the browser extension directory:
+```
+cd browser_extension
 ```
 
-#### Batch Analysis
+2. Load the extension in Chrome:
+- Open Chrome and go to `chrome://extensions/`
+- Enable Developer Mode
+- Click "Load unpacked" and select the `browser_extension` directory
 
-```python
-import requests
-import json
-
-url = "http://localhost:8000/batch-predict"
-payload = {
-    "emails": [
-        {
-            "subject": "Urgent: Account Verification Required",
-            "body": "Dear User, Your account has been suspended. Click here to verify: http://suspicious-link.com",
-            "sender": "security@bank-verify.com"
-        },
-        {
-            "subject": "Meeting notes from yesterday",
-            "body": "Hi team, Attached are the notes from yesterday's meeting. Let me know if you have questions.",
-            "sender": "colleague@company.com"
-        }
-    ]
-}
-
-response = requests.post(url, json=payload)
-print(json.dumps(response.json(), indent=2))
-```
+The extension adds a "Check for Phishing" button in Gmail and Outlook web interfaces to analyze the currently open email.
 
 ## Project Structure
 
 - `combined_pipeline.py` - The main phishing detection pipeline implementation
-- `expand_dataset.py` - Scripts to download and integrate additional datasets
+- `enhanced_phishing_detector.py` - Advanced detector with multiple analysis components
+- `enhanced_phishing_detector_gui.py` - GUI version of the enhanced detector
+- `sender_analysis.py` - Email sender and domain analysis
+- `url_analysis.py` - URL and link analysis
+- `image_analysis.py` - Image-based phishing detection
+- `behavioral_analysis.py` - User behavior and pattern analysis
+- `vector_db_integration.py` - Vector similarity database implementation
 - `api_server.py` - FastAPI server for deploying the model as a service
+- `expand_dataset.py` - Scripts to download and integrate additional datasets
+- `browser_extension/` - Chrome/Firefox extension for webmail integration
 - `models/` - Directory for saved trained models
 - `expanded_data/` - Directory for expanded datasets
-- `feedback/` - Directory for user feedback on predictions
+- `results/` - Directory for analysis results
+- `*.bat` & `*.sh` - Batch and shell scripts for easy execution
 
 ## Performance
 
@@ -162,9 +192,14 @@ To use a different LLM, modify the `llm_model_name` parameter when initializing 
 pipeline = PhishingDetectionPipeline(llm_model_name="bert-base-uncased")
 ```
 
-### Adjusting Decision Thresholds
+### Adjusting Detection Parameters
 
-To adjust the sensitivity of the phishing detection, modify the threshold values in the `predict` method of the `PhishingDetectionPipeline` class.
+To customize the detection parameters, edit the `phishing_detector_config.json` file:
+
+- Adjust detection thresholds
+- Enable/disable specific analysis components
+- Configure API settings
+- Set feedback collection options
 
 ## Ethical Considerations
 
@@ -183,6 +218,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - PhishTank for phishing URL dataset
 - Enron Email Dataset for legitimate email examples
 - Hugging Face for transformer models
+- Tesseract OCR by Google
 
 ## Contributing
 
