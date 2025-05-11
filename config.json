@@ -1,0 +1,11 @@
+{
+    "confidence_threshold": 0.5,
+    "high_confidence_threshold": 0.8,
+    "url_timeout": 3,
+    "max_redirects": 3,
+    "component_weights": {
+        "sender": 0.4,
+        "url": 0.4,
+        "content": 0.2
+    }
+} 

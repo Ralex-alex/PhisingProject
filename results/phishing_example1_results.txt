@@ -1,0 +1,19 @@
+
+Detailed Analysis Results:
+From: security@secure-banking-online.com
+To: customer@example.com
+
+Sender Analysis:
+Risk Score: 0.35
+
+URL Analysis:
+URLs Found: 1
+Risk Score: 0.60
+Suspicious URLs:
+Phishing detection result: LEGITIMATE
+Confidence: 0.00
+Risk level: UNKNOWN
+Analysis time: 0.00 seconds
+
+Recommendations:
+- Could not analyze the email due to an error.

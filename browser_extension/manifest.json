@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "PhishSentinel - Email Protection",
+  "version": "1.0",
+  "description": "Detect phishing emails using advanced ML/LLM techniques",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "webRequest"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "*://mail.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["images/*"],
+    "matches": ["*://mail.google.com/*", "http://localhost:8000/*"]
+  }]
+} 

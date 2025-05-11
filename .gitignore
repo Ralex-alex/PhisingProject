@@ -1,0 +1,28 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Distribution / packaging
+*.egg-info/
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Large data files
+emails_from_spamassassin.csv
+
+# IDE specific files
+.idea/
+.vscode/ 

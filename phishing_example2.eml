@@ -1,0 +1,21 @@
+From: support@subscription-services.net
+To: customer@example.com
+Subject: ACTION REQUIRED: Update Your Payment Information
+Date: Tue, 6 Jun 2023 14:32:11 -0400
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<p>Dear Valued Customer,</p>
+
+<p>We were unable to process your recent payment for your subscription. To avoid service interruption, please update your payment information immediately.</p>
+
+<p>Update your payment details here:<br>
+<a href="https://payment-update-portal.net/form.php?id=67890">https://payment-update-portal.net/form.php?id=67890</a></p>
+
+<p>Your service will be terminated if payment is not received within 48 hours.</p>
+
+<p>Customer Support Team</p>
+</body>
+</html> 

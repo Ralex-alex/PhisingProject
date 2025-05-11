@@ -1,0 +1,243 @@
+/* Phishing check button */
+.phishing-check-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.2s;
+}
+
+.phishing-check-btn:hover {
+  background-color: #3367d6;
+}
+
+/* Phishing result container */
+.phishing-result {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  z-index: 10000;
+  font-family: Arial, sans-serif;
+  animation: fade-in 0.3s ease-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Phishing danger result */
+.phishing-danger {
+  border-top: 6px solid #ff4444;
+}
+
+.phishing-danger h3 {
+  color: #ff4444;
+  margin-top: 0;
+}
+
+/* Phishing safe result */
+.phishing-safe {
+  border-top: 6px solid #00c851;
+}
+
+.phishing-safe h3 {
+  color: #00c851;
+  margin-top: 0;
+}
+
+/* Phishing details section */
+.phishing-details {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 12px 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.phishing-details h4 {
+  margin-top: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.phishing-details ul {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.phishing-details li {
+  margin-bottom: 4px;
+}
+
+/* Action buttons */
+.phishing-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.phishing-actions button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+#phishing-close-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+#phishing-close-btn:hover {
+  background-color: #d0d0d0;
+}
+
+#phishing-report-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+#phishing-report-btn:hover {
+  background-color: #f57c00;
+}
+
+/* Loading indicator */
+.phishing-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 10000;
+  text-align: center;
+  min-width: 250px;
+  animation: fade-in 0.2s ease-out;
+}
+
+.phishing-loading p {
+  margin: 10px 0 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.phishing-loading-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(66, 133, 244, 0.3);
+  border-radius: 50%;
+  border-top-color: #4285f4;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Overlay background */
+.phishing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Risk level badges */
+.risk-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.risk-high {
+  background-color: #ff4444;
+  color: white;
+}
+
+.risk-medium {
+  background-color: #ffbb33;
+  color: black;
+}
+
+.risk-low {
+  background-color: #00c851;
+  color: white;
+}
+
+/* Suspicious element items */
+.suspicious-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.suspicious-item:last-child {
+  border-bottom: none;
+}
+
+.suspicious-item-icon {
+  margin-right: 8px;
+  color: #ff4444;
+}
+
+.suspicious-item-type {
+  font-weight: bold;
+  margin-right: 8px;
+  color: #666;
+}
+
+/* Similar emails section */
+.similar-emails {
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.similar-email-item {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.similar-email-item .similarity {
+  font-weight: bold;
+  color: #ff4444;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .phishing-result {
+    width: 90%;
+    max-height: 70vh;
+  }
+} 

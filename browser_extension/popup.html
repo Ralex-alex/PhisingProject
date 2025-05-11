@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Email Detector</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    button {
+      background-color: #4169E1;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #3050C0;
+    }
+    .result {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .loading {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .safe {
+      background-color: #dff0d8;
+      color: #3c763d;
+      border: 1px solid #d6e9c6;
+    }
+    .danger {
+      background-color: #f2dede;
+      color: #a94442;
+      border: 1px solid #ebccd1;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Phishing Email Detector</h1>
+  
+  <div class="input-group">
+    <label for="subject">Email Subject:</label>
+    <input type="text" id="subject" placeholder="Enter email subject">
+  </div>
+  
+  <div class="input-group">
+    <label for="body">Email Body:</label>
+    <textarea id="body" placeholder="Paste email body text here"></textarea>
+  </div>
+  
+  <button id="check-button">Check Email</button>
+  
+  <div id="loading" class="loading hidden">
+    Analyzing email...
+  </div>
+  
+  <div id="result" class="result hidden">
+    <!-- Result will be shown here -->
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 

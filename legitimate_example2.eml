@@ -1,0 +1,23 @@
+From: auto-confirm@amazon.com
+To: customer@example.com
+Subject: Your Amazon Order #123-4567890-1234567
+Date: Thu, 8 Jun 2023 16:45:33 -0400
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<p>Hello,</p>
+
+<p>Thank you for your order. We'll send a confirmation when your item ships.</p>
+
+<p><strong>Your Order Details:</strong><br>
+- Wireless Headphones<br>
+- $89.99<br>
+- Arriving: June 10-12</p>
+
+<p>To view the status of your order, please visit Your Orders on <a href="https://www.amazon.com/your-orders">Amazon.com</a>.</p>
+
+<p>Amazon Customer Service</p>
+</body>
+</html> 

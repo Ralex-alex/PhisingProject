@@ -1,0 +1,22 @@
+From: security@secure-banking-online.com
+To: customer@example.com
+Subject: URGENT: Your Online Banking Access Suspended
+Date: Mon, 5 Jun 2023 09:23:45 -0500
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<p>Dear Customer,</p>
+
+<p>We have detected unusual activity on your online banking account. To prevent unauthorized access, your account has been temporarily suspended.</p>
+
+<p>To restore your account access, please verify your information by clicking the following link:<br>
+<a href="http://secure-banking-verification.com/restore.php">http://secure-banking-verification.com/restore.php</a></p>
+
+<p>This link will expire in 24 hours. Failure to verify your account will result in permanent suspension.</p>
+
+<p>Regards,<br>
+Security Department</p>
+</body>
+</html> 

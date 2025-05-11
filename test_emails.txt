@@ -1,0 +1,94 @@
+=============== PHISHING EMAIL EXAMPLES ===============
+
+----- Example 1: Account Suspension Phishing -----
+Subject: URGENT: Your Online Banking Access Suspended
+
+Dear Customer,
+
+We have detected unusual activity on your online banking account. To prevent unauthorized access, your account has been temporarily suspended.
+
+To restore your account access, please verify your information by clicking the following link:
+http://secure-banking-verification.com/restore.php
+
+This link will expire in 24 hours. Failure to verify your account will result in permanent suspension.
+
+Regards,
+Security Department
+
+----- Example 2: Payment Update Phishing -----
+Subject: ACTION REQUIRED: Update Your Payment Information
+
+Dear Valued Customer,
+
+We were unable to process your recent payment for your subscription. To avoid service interruption, please update your payment information immediately.
+
+Update your payment details here:
+https://payment-update-portal.net/form.php?id=67890
+
+Your service will be terminated if payment is not received within 48 hours.
+
+Customer Support Team
+
+----- Example 3: Prize Winner Phishing -----
+Subject: CONGRATULATIONS! You've Won a New iPhone 14 Pro!
+
+Hello Lucky Winner,
+
+Your email address has been randomly selected as the winner of a brand new iPhone 14 Pro in our monthly giveaway!
+
+To claim your prize, click here:
+http://prize-claim-center.org/iphone14/claim.php
+
+You must claim your prize within 3 days or another winner will be selected.
+
+Prize Distribution Team
+
+=============== LEGITIMATE EMAIL EXAMPLES ===============
+
+----- Example 1: Newsletter -----
+Subject: Your Weekly Tech Newsletter
+
+Hi there,
+
+Here's your weekly roundup of the latest tech news:
+
+1. Microsoft announces new Surface devices
+2. Apple releases iOS 16.5 update
+3. Google introduces AI features for Workspace
+
+Read the full articles on our website: https://legittech.news/weekly
+
+To manage your subscription preferences, visit your account settings.
+
+Best regards,
+Tech Newsletter Team
+
+----- Example 2: Order Confirmation -----
+Subject: Your Amazon Order #123-4567890-1234567
+
+Hello,
+
+Thank you for your order. We'll send a confirmation when your item ships.
+
+Your Order Details:
+- Wireless Headphones
+- $89.99
+- Arriving: June 10-12
+
+To view the status of your order, please visit Your Orders on Amazon.com.
+
+Amazon Customer Service
+
+----- Example 3: Appointment Reminder -----
+Subject: Reminder: Your Dental Appointment Tomorrow
+
+Dear Patient,
+
+This is a friendly reminder that you have a dental appointment scheduled for tomorrow, June 8, 2023, at 2:30 PM with Dr. Johnson.
+
+Please arrive 10 minutes early to complete any necessary paperwork. If you need to reschedule, please call our office at (555) 123-4567.
+
+Remember to bring your insurance card.
+
+Thank you,
+City Dental Clinic 

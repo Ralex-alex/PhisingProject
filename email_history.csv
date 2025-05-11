@@ -1,0 +1,6 @@
+sender,recipient,subject,timestamp,is_phishing
+support@paypal.com,user@example.com,Your monthly statement,2023-09-01 10:15:30,0
+info@amazon.com,user@example.com,Your Amazon order has shipped,2023-09-05 14:22:45,0
+notifications@linkedin.com,user@example.com,New connection request,2023-09-10 09:30:12,0
+security@microsoft.com,user@example.com,Security alert for your account,2023-09-15 22:45:10,0
+phishing@malicious-domain.com,user@example.com,Urgent: Account verification required,2023-09-20 03:12:55,1 

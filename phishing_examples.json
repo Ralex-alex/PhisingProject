@@ -1,0 +1,29 @@
+{
+  "examples": [
+    {
+      "content": "Dear Customer, We have detected unusual activity on your account. Please click the following link to verify your identity: http://secure-bank-verification.com",
+      "is_phishing": true,
+      "explanation": "This is a phishing attempt because it uses urgency, has a suspicious URL that doesn't match a legitimate bank domain, and asks for verification without specifying which account."
+    },
+    {
+      "content": "Your PayPal account has been limited! You must verify your information within 24 hours or your account will be permanently suspended. Click here: http://paypal-secure-login.com",
+      "is_phishing": true,
+      "explanation": "This is a phishing attempt because it creates urgency with a threat, uses a suspicious domain that mimics PayPal but isn't the official domain, and has grammatical errors."
+    },
+    {
+      "content": "Amazon: Your recent order #A12345 has been shipped and will arrive on Thursday, June 15. Track your package here: https://amazon.com/track/A12345",
+      "is_phishing": false,
+      "explanation": "This is legitimate because it references a specific order number, uses the official Amazon domain, doesn't ask for personal information, and provides expected shipping information."
+    },
+    {
+      "content": "URGENT: Your iCloud account has been locked due to too many login attempts. To unlock your account, click here: http://apple-account-verify.com/unlock",
+      "is_phishing": true,
+      "explanation": "This is a phishing attempt because it creates false urgency, uses an unofficial domain that mimics Apple, and the message is vague about the supposed security issue."
+    },
+    {
+      "content": "Microsoft: Your subscription will expire in 3 days. To continue your service without interruption, please update your payment information at https://account.microsoft.com",
+      "is_phishing": false,
+      "explanation": "This is legitimate because it uses the official Microsoft domain, provides specific information about the subscription expiration, and doesn't create false urgency."
+    }
+  ]
+} 

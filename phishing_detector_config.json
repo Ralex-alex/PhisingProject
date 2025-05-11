@@ -1,0 +1,119 @@
+{
+    "confidence_threshold": 0.45,
+    "llm_threshold": 0.4,
+    "high_confidence_threshold": 0.75,
+    "vector_similarity_threshold": 0.7,
+    "max_redirects": 5,
+    "url_timeout": 3,
+    "parallel_analysis": true,
+    "save_history": true,
+    "component_weights": {
+        "sender": 0.25,
+        "image": 0.05,
+        "behavioral": 0.2,
+        "url": 0.25,
+        "llm": 0.2,
+        "vector_similarity": 0.05
+    },
+    "sender_analysis": {
+        "check_dmarc": true,
+        "check_spf": true,
+        "check_dkim": true,
+        "check_domain_age": true,
+        "check_typosquatting": true,
+        "trusted_domains": [
+            "gmail.com",
+            "outlook.com",
+            "hotmail.com",
+            "yahoo.com",
+            "icloud.com",
+            "microsoft.com",
+            "apple.com",
+            "amazon.com",
+            "facebook.com",
+            "twitter.com",
+            "linkedin.com",
+            "netflix.com",
+            "spotify.com",
+            "twitch.tv",
+            "youtube.com",
+            "discord.com",
+            "steam.com",
+            "steamcommunity.com",
+            "steampowered.com",
+            "paypal.com",
+            "chase.com",
+            "bankofamerica.com",
+            "wellsfargo.com",
+            "buyitdirect.ie",
+            "mail4.buyitdirect.ie",
+            "buyitdirect.co.uk",
+            "laptopsdirect.ie",
+            "laptopsdirect.co.uk"
+        ]
+    },
+    "image_analysis": {
+        "enable_ocr": true,
+        "detect_logos": true,
+        "check_url_manipulation": true,
+        "min_image_size": 20,
+        "ignore_tracking_pixels": true
+    },
+    "url_analysis": {
+        "check_redirects": true,
+        "check_domain_reputation": true,
+        "check_url_shorteners": true,
+        "suspicious_tlds": [
+            ".tk",
+            ".ga",
+            ".cf",
+            ".ml",
+            ".gq",
+            ".xyz",
+            ".top",
+            ".club"
+        ]
+    },
+    "behavioral_analysis": {
+        "check_sending_time": true,
+        "check_geographic_origin": true,
+        "check_sender_history": true,
+        "suspicious_countries": [
+            "Russia",
+            "China",
+            "Nigeria",
+            "North Korea",
+            "Iran"
+        ]
+    },
+    "llm_analysis": {
+        "use_openai": false,
+        "model_name": "sentence-transformers/all-mpnet-base-v2",
+        "max_tokens": 1024
+    },
+    "vector_database": {
+        "dimension": 768,
+        "model_name": "sentence-transformers/all-mpnet-base-v2",
+        "db_path": "models/phishing_vector_db",
+        "metadata_path": "models/phishing_vector_metadata.json",
+        "cache_ttl": 300
+    },
+    "api_server": {
+        "host": "0.0.0.0",
+        "port": 8000,
+        "enable_cors": true,
+        "allowed_origins": [
+            "*"
+        ]
+    },
+    "model_settings": {
+        "llm_model": "sentence-transformers/all-mpnet-base-v2",
+        "use_openai": false,
+        "batch_size": 16
+    },
+    "ui_settings": {
+        "logo_path": "PhishSentinelLogo.png",
+        "theme": "light",
+        "show_detailed_analysis": true
+    }
+}

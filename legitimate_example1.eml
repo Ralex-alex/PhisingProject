@@ -1,0 +1,27 @@
+From: newsletter@legittech.news
+To: subscriber@example.com
+Subject: Your Weekly Tech Newsletter
+Date: Wed, 7 Jun 2023 08:15:22 -0700
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+<p>Hi there,</p>
+
+<p>Here's your weekly roundup of the latest tech news:</p>
+
+<ol>
+<li>Microsoft announces new Surface devices</li>
+<li>Apple releases iOS 16.5 update</li>
+<li>Google introduces AI features for Workspace</li>
+</ol>
+
+<p>Read the full articles on our website: <a href="https://legittech.news/weekly">https://legittech.news/weekly</a></p>
+
+<p>To manage your subscription preferences, visit your account settings.</p>
+
+<p>Best regards,<br>
+Tech Newsletter Team</p>
+</body>
+</html> 
