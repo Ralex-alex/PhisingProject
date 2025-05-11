@@ -4,16 +4,47 @@ From: support@subscription-services.net
 To: customer@example.com
 
 Sender Analysis:
-Risk Score: 0.29
+Risk Score: 0.32
 
 URL Analysis:
-URLs Found: 1
-Risk Score: 0.60
-Suspicious URLs:
-Phishing detection result: LEGITIMATE
-Confidence: 0.00
-Risk level: UNKNOWN
-Analysis time: 0.00 seconds
+URLs Found: ['https://payment-update-portal.net/form.php?id=67890']
+Risk Score: 0.00
 
-Recommendations:
-- Could not analyze the email due to an error.
+Final Verdict: LEGITIMATE
+Confidence: 0.32
+Risk Level: LOW
+Analysis Time: 2.58 seconds
+Phishing detection result: LEGITIMATE
+Confidence: 0.32
+Risk level: LOW
+Analysis time: 2.58 seconds
+
+Similar known phishing emails:
+- Similarity: 0.86
+  Preview: 
+Subject: ACTION REQUIRED: Update Your Payment Information
+
+Dear Valued Customer,
+
+We were unable to...
+- Similarity: 0.86
+  Preview: 
+Subject: ACTION REQUIRED: Update Your Payment Information
+
+Dear Valued Customer,
+
+We were unable to...
+- Similarity: 0.86
+  Preview: 
+Subject: ACTION REQUIRED: Update Your Payment Information
+
+Dear Valued Customer,
+
+We were unable to...
+- Similarity: 0.77
+  Preview: 
+Subject: Payment Confirmation Required
+
+Dear Sir/Madam,
+
+We have tried to process your recent payme...

@@ -4,16 +4,47 @@ From: auto-confirm@amazon.com
 To: customer@example.com
 
 Sender Analysis:
-Risk Score: 0.17
+Risk Score: 0.18
 
 URL Analysis:
-URLs Found: 1
-Risk Score: 0.10
-Suspicious URLs:
-Phishing detection result: LEGITIMATE
-Confidence: 0.00
-Risk level: UNKNOWN
-Analysis time: 0.00 seconds
+URLs Found: ['https://www.amazon.com/your-orders']
+Risk Score: 0.00
 
-Recommendations:
-- Could not analyze the email due to an error.
+Final Verdict: LEGITIMATE
+Confidence: 0.16
+Risk Level: LOW
+Analysis Time: 1.84 seconds
+Phishing detection result: LEGITIMATE
+Confidence: 0.16
+Risk level: LOW
+Analysis time: 1.84 seconds
+
+Similar known phishing emails:
+- Similarity: 0.85
+  Preview: 
+Subject: Order Confirmation #12345
+
+Dear Customer,
+
+Thank you for your order! We're pleased to conf...
+- Similarity: 0.79
+  Preview: 
+Subject: Your Amazon Order #123-4567890-1234567
+
+Hello,
+
+Thank you for your order. We'll send a con...
+- Similarity: 0.79
+  Preview: 
+Subject: Your Amazon Order #123-4567890-1234567
+
+Hello,
+
+Thank you for your order. We'll send a con...
+- Similarity: 0.79
+  Preview: 
+Subject: Your Amazon Order #123-4567890-1234567
+
+Hello,
+
+Thank you for your order. We'll send a con...

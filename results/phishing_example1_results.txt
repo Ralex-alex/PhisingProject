@@ -4,16 +4,66 @@ From: security@secure-banking-online.com
 To: customer@example.com
 
 Sender Analysis:
-Risk Score: 0.35
+Risk Score: 0.40
 
 URL Analysis:
-URLs Found: 1
+URLs Found: ['http://secure-banking-verification.com/restore.php']
 Risk Score: 0.60
-Suspicious URLs:
-Phishing detection result: LEGITIMATE
-Confidence: 0.00
-Risk level: UNKNOWN
-Analysis time: 0.00 seconds
 
 Recommendations:
-- Could not analyze the email due to an error.
+- Do not click on any links in this email
+- Do not download or open any attachments
+- Do not reply to this email
+- This email is similar to known phishing attempts in our database
+
+Final Verdict: PHISHING
+Confidence: 0.52
+Risk Level: MEDIUM
+Analysis Time: 1.07 seconds
+Phishing detection result: PHISHING
+Confidence: 0.52
+Risk level: MEDIUM
+Analysis time: 1.07 seconds
+
+Recommendations:
+- Do not click on any links in this email
+- Do not download or open any attachments
+- Do not reply to this email
+- This email is similar to known phishing attempts in our database
+
+Similar known phishing emails:
+- Similarity: 0.90
+  Preview: 
+Subject: URGENT: Your Online Banking Access Suspended
+
+Dear Customer,
+
+We have detected unusual act...
+- Similarity: 0.90
+  Preview: 
+Subject: URGENT: Your Online Banking Access Suspended
+
+Dear Customer,
+
+We have detected unusual act...
+- Similarity: 0.90
+  Preview: 
+Subject: URGENT: Your Online Banking Access Suspended
+
+Dear Customer,
+
+We have detected unusual act...
+- Similarity: 0.75
+  Preview: 
+Subject: Security Alert: Unusual Sign-in Activity
+
+Dear Customer,
+
+We detected an unusual sign-in a...
+- Similarity: 0.75
+  Preview: 
+Subject: Security Alert: Unusual Sign-in Activity
+
+Dear Customer,
+
+We detected an unusual sign-in a...

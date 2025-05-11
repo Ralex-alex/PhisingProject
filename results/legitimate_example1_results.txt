@@ -4,16 +4,40 @@ From: newsletter@legittech.news
 To: subscriber@example.com
 
 Sender Analysis:
-Risk Score: 0.27
+Risk Score: 0.33
 
 URL Analysis:
-URLs Found: 1
-Risk Score: 0.60
-Suspicious URLs:
-Phishing detection result: LEGITIMATE
-Confidence: 0.00
-Risk level: UNKNOWN
-Analysis time: 0.00 seconds
+URLs Found: ['https://legittech.news/weekly']
+Risk Score: 0.00
 
-Recommendations:
-- Could not analyze the email due to an error.
+Final Verdict: LEGITIMATE
+Confidence: 0.21
+Risk Level: LOW
+Analysis Time: 1.66 seconds
+Phishing detection result: LEGITIMATE
+Confidence: 0.21
+Risk level: LOW
+Analysis time: 1.66 seconds
+
+Similar known phishing emails:
+- Similarity: 0.73
+  Preview: 
+Subject: Your Weekly Tech Newsletter
+
+Hi there,
+
+Here's your weekly roundup of the latest tech news...
+- Similarity: 0.73
+  Preview: 
+Subject: Your Weekly Tech Newsletter
+
+Hi there,
+
+Here's your weekly roundup of the latest tech news...
+- Similarity: 0.73
+  Preview: 
+Subject: Your Weekly Tech Newsletter
+
+Hi there,
+
+Here's your weekly roundup of the latest tech news...

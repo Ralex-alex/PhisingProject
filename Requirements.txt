@@ -6,16 +6,16 @@
 # 3) Then install packages: pip install -r requirements.txt
 
 # Core data science packages
-pandas>=1.3.0
-numpy>=1.20.0
-scikit-learn>=1.0.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.0
 
 # Deep learning and LLM packages
-transformers>=4.18.0
-torch>=2.0.0     # CPU wheels are fine; or use +cu118 if you have GPU
+transformers==4.51.3
+torch==2.3.0     # CPU wheels are fine; or use +cu118 if you have GPU
 accelerate>=0.18.0  # For better transformer performance
-sentence-transformers>=2.2.0  # For improved embeddings
-faiss-cpu>=1.7.0  # For vector similarity search (use faiss-gpu if you have GPU)
+sentence-transformers==2.7.0  # For improved embeddings
+faiss-cpu==1.11.0  # For vector similarity search (use faiss-gpu if you have GPU)
 
 # NLP tools
 nltk>=3.7
@@ -24,12 +24,12 @@ python-Levenshtein>=0.12.0  # For string similarity
 
 # Computer vision packages
 opencv-python>=4.5.0  # For image analysis
-pillow>=9.0.0  # For image handling
-pytesseract>=0.3.10  # For OCR in images
+pillow==11.2.1  # For image handling
+pytesseract==0.3.13  # For OCR in images
 
 # Network and domain analysis
-dnspython>=2.2.0  # For DNS queries (SPF/DMARC checks)
-python-whois>=0.7.0  # For domain age checking
+dnspython==2.6.1  # For DNS queries (SPF/DMARC checks)
+python-whois==0.8.0  # For domain age checking
 tldextract>=3.1.0  # For domain extraction
 dkimpy>=1.0.5  # For DKIM verification
 
@@ -39,9 +39,9 @@ uvicorn>=0.18.0
 pydantic>=1.9.0
 
 # Utilities
-tqdm>=4.64.0
+tqdm==4.67.1
 joblib>=1.1.0
-requests>=2.28.0
+requests==2.32.3
 ipaddress>=1.0.23  # For IP address validation
 pytz>=2022.1  # For timezone handling
 
@@ -59,8 +59,8 @@ tkinter  # Usually comes with Python, no need to install separately
 pytest>=7.0.0
 
 # Vector database and similarity search
-faiss-cpu>=1.7.0
-sentence-transformers>=2.2.0
+faiss-cpu==1.11.0
+sentence-transformers==2.7.0
 
 # Email parsing and authentication
 email-validator>=1.2.1
@@ -75,3 +75,6 @@ pytest-cov>=4.1.0
 pytest-html>=3.2.0
 pytest-benchmark>=4.0.0
 pytest-xdist>=3.3.1
+
+# BeautifulSoup4
+beautifulsoup4==4.13.4
