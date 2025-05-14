@@ -52,8 +52,6 @@ aiofiles>=0.8.0
 # Monitoring and logging
 rich>=12.5.0
 
-# GUI application
-tkinter  # Usually comes with Python, no need to install separately
 
 # Testing
 pytest>=7.0.0
